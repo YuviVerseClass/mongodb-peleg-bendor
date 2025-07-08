@@ -22,12 +22,22 @@ Build a full backend connection to a MongoDB database using Node.js, Express, an
   - [x] `toggleTask`: toggle done field
   - [x] `deleteTask`: remove task by ID
 
+- [x] **Implement Database Controller** (`controllers/dbController.js`) ✅ COMPLETE
+  - [x] `getTasks`: return all tasks
+  - [x] `addTask`: add task from req.body.title
+  - [x] `toggleTask`: toggle done field
+  - [x] `deleteTask`: remove task by ID
+- [x] **Wire Up API Routes** (`routes/api.js`) ✅ COMPLETE
+  - [x] GET /tasks → getTasks
+  - [x] POST /tasks → addTask  
+  - [x] PATCH /tasks/:id → toggleTask
+  - [x] DELETE /tasks/:id → deleteTask
+
 ## 🔄 Current Task
-- [ ] **Wire Up API Routes** (`routes/api.js`)
-  - GET /tasks → getTasks
-  - POST /tasks → addTask  
-  - PATCH /tasks/:id → toggleTask
-  - DELETE /tasks/:id → deleteTask
+- [ ] **Test Everything Together**
+  - Start server
+  - Test frontend with backend
+  - Verify MongoDB operations
 
 ## 📋 Upcoming Tasks
 - [ ] **Create Task Model** (`models/Task.js`)
@@ -49,3 +59,4 @@ Build a full backend connection to a MongoDB database using Node.js, Express, an
   - Start server
   - Test frontend with backend
   - Verify MongoDB operations
+
